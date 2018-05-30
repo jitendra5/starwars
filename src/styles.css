@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(#0b0c0e, #0b0c0e);
+  background-image: url('assets/images/preview.png');
+  background-position: center -100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  */
+}

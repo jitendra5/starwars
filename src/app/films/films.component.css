@@ -1,0 +1,15 @@
+p {
+  color: #fff;
+  font-size: 15px;
+}
+h2 {
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0px 3px 6px #000000;
+  font-size: 30px;
+  font-family: Roboto;
+}
+div {
+  margin-top: 600px;
+  background: linear-gradient(#000000 0%, #0b0c0e 100%);
+}
