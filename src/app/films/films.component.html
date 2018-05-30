@@ -1,12 +1,13 @@
 <div>
   <h2>Movies</h2>
-
-  <div *ngFor='let i of images'>
-    <div class="col-sm" style="color:#fff;">
-      {{i.index}}
-      <img src="/assets/images/Star-Wars-1.jpeg" alt="Starwars">
+  <div class="row">
+    <div class="container">
+      <div *ngFor='let i of images' style="color:white;display: inline;">
+        <p>{{i}}</p>
+        <div class="col-sm" style="color:#fff;">
+          <img src='/assets/images/{{i}}' alt="Starwars">
+        </div>
+      </div>
     </div>
   </div>
-
-
 </div>
