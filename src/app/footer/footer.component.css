@@ -1,0 +1,20 @@
+footer{
+  background: linear-gradient(#0b0c0e, #0b0c0e);
+}
+p{
+  color:#fff;
+}
+li>a{
+  color:#fff;
+  font-size:17px;
+}
+.flink{
+  margin-bottom:100px;
+  margin-right:150px;
+
+}
+
+
+ul {
+  list-style-type: none;
+}
