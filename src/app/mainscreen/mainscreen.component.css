@@ -6,13 +6,18 @@ p {
   width: 49px;
   height: 49px;
   position: absolute;
-  bottom: 80px;
+  bottom: 30px;
   left: 0;
   right: 0;
   margin: auto;
-  padding-top: 500px;
   z-index: 9;
   border-radius: 50%;
   -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
 }
+/* div {
+  background: linear-gradient(#0b0c0e, #0b0c0e);
+  width: 100px;
+  height: 100px;
+  margin-left: 50%;
+} */

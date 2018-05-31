@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mainscreen.component.css']
 })
 export class MainscreenComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {}
+  scrollScreen() {
+    window.scrollTo({ left: 0, top: 700, behavior: 'smooth' });
   }
 
+  ngOnInit() {}
 }
