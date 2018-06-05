@@ -21,3 +21,8 @@ p {
   height: 100px;
   margin-left: 50%;
 } */
+@media only screen and (min-height: 768px) {
+  .scroll-button {
+    display: none;
+  }
+}

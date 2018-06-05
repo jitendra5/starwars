@@ -6,10 +6,11 @@ li > a {
   margin-right: 82px;
   margin-top: 45px;
 }
-.navbar.transparent.navbar-inverse .navbar-inner {
+.dropdown-menu {
   border-width: 0px;
   -webkit-box-shadow: 0px 0px;
   box-shadow: 0px 0px;
+
   background-color: rgba(0, 0, 0, 0);
   background-image: -webkit-gradient(
     linear,
@@ -28,4 +29,16 @@ li > a {
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+.dropdown-item {
+  color: #fff;
+}
+.dropdown-item:hover {
+  color: black;
+  background-color: #dcdcdc 50%;
+}
+button span {
+  /*overwriting*/
+  color: white;
+  font-size: 25px;
 }

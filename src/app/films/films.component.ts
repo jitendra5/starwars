@@ -13,6 +13,5 @@ export class FilmsComponent implements OnInit {
     for (var i = 1; i < 11; i++) {
       this.images.push('Star-Wars-' + i + '.jpeg');
     }
-    console.log(this.images);
   }
 }
