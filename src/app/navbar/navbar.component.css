@@ -11,7 +11,7 @@ li > a {
   -webkit-box-shadow: 0px 0px;
   box-shadow: 0px 0px;
 
-  background-color: rgba(0, 0, 0, 0);
+  #background-color: rgba(0, 0, 0, 0);
   background-image: -webkit-gradient(
     linear,
     50% 0%,
@@ -32,13 +32,20 @@ li > a {
 }
 .dropdown-item {
   color: #fff;
+  background: #dcdcdc;
 }
 .dropdown-item:hover {
   color: black;
-  background-color: #dcdcdc 50%;
+  background-color: #dcdcdc;
 }
 button span {
   /*overwriting*/
   color: white;
   font-size: 25px;
+}
+.navbar-nav{
+  background:#fff;
+}
+.nav-link{
+  color: #000000;
 }
