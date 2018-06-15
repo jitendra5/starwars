@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  getBackgroundImg(): any {
+    return "url('assets/images/episode 1.jpg') ";
+  }
+  constructor(public renderer: Renderer2) {}
+
+  clickMe() {
+    this.renderer.setStyle(
+      document.body,
+      'background-image',
+      this.getBackgroundImg()
+    );
+  }
 }

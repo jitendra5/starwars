@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-films',
@@ -8,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class FilmsComponent implements OnInit {
   images = [];
   constructor() {}
-
+  @Output() valueChange = new EventEmitter();
   ngOnInit() {
     for (var i = 1; i < 11; i++) {
       this.images.push('Star-Wars-' + i + '.jpeg');
     }
+  }
+  changeBackground() {
+    this.valueChange.emit(this.counter);
   }
 }

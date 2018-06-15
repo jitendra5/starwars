@@ -4,7 +4,9 @@
     <p id="anyId1">Movies</p>
     <div *ngFor="let img of images; let i=index;" style="color:white;display: inline;">
       <p style="display: none;">{{i+1}}</p>
-    <a routerLink="film/{{i}}">  <img src='/assets/images/{{img}}' alt="Starwars" style="box-shadow: 0px 10px 10px #000000;width:317px; height:425px;margin-bottom: 50px;padding:5px;border-radius:10px;">
-    </a></div>
+      <a routerLink="film/{{i}}">
+        <img src='/assets/images/{{img}}' alt="Starwars" (click)="changeBackground()">
+      </a>
+    </div>
   </div>
 </div>

@@ -14,3 +14,11 @@ div {
   background: linear-gradient(#000000 0%, #0b0c0e 100%);
 }
 
+a {
+  box-shadow: 0px 10px 10px #000000;
+  width: 317px;
+  height: 425px;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 10px;
+}

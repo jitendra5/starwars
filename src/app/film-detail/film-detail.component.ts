@@ -17,31 +17,16 @@ export class FilmDetailComponent implements OnInit {
     console.log('Epid:', epid);
     var obj1 = <Film>{};
     _.forEach(arg0, function(element, i) {
-      if (element.episode_id === epid) {
+      if (element['episode_id'] === epid) {
         console.log('Check episode method!!');
         console.log(element);
-        var obj1 = element;
-        console.log('obj1');
-        console.log(obj1);
+        obj1 = element;
       }
     });
-    return Observable.of(obj1);
+    return Observable.create(obj1);
   }
-  obj: {
-    title: string;
-    episode_id: number;
-    opening_crawl: string;
-    director: string;
-    producer: string;
-    release_date: string;
-    characters: string[];
-    planets: string[];
-    starships: string[];
-    vehicles: string[];
-    species: string[];
-    created: string;
-    edited: string;
-  };
+  film = {};
+
   episodeId: number;
   constructor(
     private _swservice: SwServiceService,
@@ -54,9 +39,16 @@ export class FilmDetailComponent implements OnInit {
       this.episodeId = +params.get('id');
       this._swservice
         .getFilmById(this.episodeId + 1)
-        .map((response: Response) => response)
-        .filter(data => this.checkEpisode(data, this.episodeId + 1))
-        .subscribe(x => console.log(x));
+        .map((response: Response) => {
+          return this.checkEpisode(response, +params.get('id') + 1);
+        })
+
+        .subscribe(x => {
+          // console.log(x);
+          // console.log(JSON.stringify(x));
+          this.film = x._subscribe;
+          // console.log(this.film.title);
+        });
     });
   }
 }
