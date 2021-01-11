@@ -1,0 +1,11 @@
+{
+  "id_subject": [
+    {
+      "sfid": "a2r0t000000nrQlAAI",
+      "cbid": -20013,
+      "error_message": "ORA-20013: Unknown genotyped value: \"false\"\nORA-06512: in \"CLINBASE.PVS_SBJ\", Zeile 362\nORA-06512: in \"CLINBASE.PVS_SBJ\", Zeile 171"
+    },
+    { "sfid": "a2r0t000000nrQlAAI", "cbid": 134416, "error_message": null },
+    { "sfid": "0Ss0t0000000001CAA", "cbid": 134417, "error_message": null }
+  ]
+}
